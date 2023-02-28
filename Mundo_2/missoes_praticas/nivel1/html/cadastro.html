@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/formatos.css">
+  <title>Cadastro</title>
+</head>
+
+<body id="cadastro">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Receitas.html">Receitas</a></li>
+        <li><a href="Cadastro.html" id="cad">Cadastro</a></li>
+      </ul>
+     
+    
+    </nav>
+  </header>
+  <main>
+    <div class="container" id="c-main">
+
+      <h1>
+        Efetue seu cadastro
+      </h1>
+
+      <form id="form1" action="https://formspree.io/f/xzbqgznp" method="POST">
+        <div class="row  mb-3 mb-3">
+          <label class="col control-label col-lg-2">Nome: </label>
+          <div class="col col-lg-8">
+            <input type="text" class="form-control " name="Nome"  name="" required>
+          </div>
+        </div>
+        <div class="row  mb-3">
+          <label class="col control-label col-lg-2">Email: </label>
+          <div class="col col-lg-8">
+            <input type="email" class="form-control "  name="Email" required>
+          </div>
+        </div>
+        <div class="row  mb-3">
+          <label class="col control-label col-lg-2">CEP: </label>
+          <div class="col col-lg-8">
+            <input type="number" class="form-control "  name="Cep" required>
+          </div>
+        </div>
+        <div class="row  mb-3">
+          <label class="col control-label col-lg-2">Rua: </label>
+          <div class="col col-lg-8">
+            <input type="text" class="form-control "  name="Rua" required>
+          </div>
+        </div>
+        <div class="row  mb-3">
+
+          <label class="col control-label col-lg-2">N: </label>
+          <div class="col col-lg-2">
+            <input type="number" class="form-control "  name="Numero" required>
+          </div>
+          <label class="col control-label col-lg-2">Complemento: </label>
+          <div class="col col-lg-4">
+            <input type="text" class="form-control "  name="Complemento" required>
+          </div>
+
+        </div>
+        <div class="row  mb-3">
+        
+          <label class="col control-label col-lg-2">Cidade: </label>
+          <div class="col col-lg-6">
+            <input type="text" class="form-control "  name="Cidade" required >
+          </div>
+          <label class="col control-label col-lg-1">UF: </label>
+          <div class="col col-lg-1">
+            <input type="text" class="form-control "  name="UF" required >
+          </div>
+          <div class="col col-lg-2">
+            <input type="submit" class="form-control " id="btn-cta" value="Cadastrar"> 
+          </div>
+        </div>
+    </div>
+
+    </form>
+    </div>
+  </main>
+  <footer>
+    &#169; todos os direitos reservados a MartinsTech
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>

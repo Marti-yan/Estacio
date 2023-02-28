@@ -1,0 +1,21 @@
+#catalogo{
+    display: flex;
+    margin-left:10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    margin-left:5px;
+    margin-bottom: 2%;
+    
+}
+.card-title{
+    text-align: center;
+}
+ul.list-group > li{
+    list-style-position: inside;
+    margin-left: 10%;
+}
+ul.list-group{
+    padding:8% ;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+
+        }
+        h1::after {
+            content: "!";
+            color: #ff0000;
+        }
+
+        #conteiner {
+            position: relative;
+            /*Na maioria dos casos pra usar o before de forma mais complexa , != do after usado , tem q declarar o position aqui...*/
+            margin-left: 50px;
+        }
+
+        #conteiner::before {
+            content: " ";
+            width: 10px;
+            height: 100%;
+            background: linear-gradient(#ff469f, #ff6062);
+            left: -15px;
+            top: 8px;
+            position: absolute;
+            /* e aqui! */
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            color: #ff0000;
+        }
+        #txt2::first-line{
+            color: #ff469f;
+        }
+        #txt3::selection{
+            background-color: aquamarine;
+            color:#51008e;
+        }
+        nav{
+            background-color: #000;
+            position:sticky;
+            top:-50px;
+            color:#ff469f;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vel tempora quod et illum, praesentium, reprehenderit quae quidem enim saepe aut est. Obcaecati voluptatem exercitationem nesciunt optio quae blanditiis illo.</h3>
+        <br>
+        <h2>yan martins</h2>
+    </nav>
+    <div>
+        <img src="../HTML/src/telas.jpg">
+
+    </div>
+    <div>
+        <h1>teste</h1>
+    </div>
+    <div id="conteiner">
+        <h2>oi</h2>
+        <h3>sla qual coisa</h3>
+        <p>oi2</p>
+
+    </div>
+    <hr>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In mollitia, natus repellat, non quasi explicabo
+            blanditiis ducimus sit saepe officiis facere iste dolorem ea corporis? Placeat quidem obcaecati cum est.
+        </p>
+    </div>
+    <hr>
+    <div id="txt2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus enim esse voluptatem dolores,
+        voluptate, ducimus ut officiis repudiandae placeat doloremque odit officia atque obcaecati in ex magnam? Sit,
+        eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas ex fugit, eum quasi excepturi alias molestiae provident impedit voluptates veritatis assumenda expedita fuga amet dolore itaque? Qui, quia harum?
+    </div>
+    <hr>
+    <div id="txt3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus provident natus expedita rem nesciunt, odit pariatur inventore in explicabo, nostrum aut quibusdam saepe optio magni incidunt velit fuga obcaecati. 
+        Commodi nam, incidunt hic sit cumque accusamus mollitia consectetur delectus adipisci amet ut explicabo iure ipsum inventore natus, fugiat eveniet aperiam dicta? Quis necessitatibus ducimus obcaecati ad dolorem ex eveniet?
+    </div>
+</body>
+
+</html>

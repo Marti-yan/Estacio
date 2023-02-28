@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validação</title>
+</head>
+<body>
+    <form> <!-- Patterm / required-->
+        <label for="pwd">Password:</label>
+        <input type="text" id="pwd" name="pwd"
+        pattern=".{8,}" title="pelo menos 8 caracteres" required>
+        <br>
+        <input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="conter ao menos 1 letra maiscula e 1 caracter especial, e um tamanho maior que 8 caracteres!"> 
+        <input type="submit">
+        <input type="tel" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"> 
+        <!-- pela UX é melhor formatar dps -->
+    </form>
+</body>
+</html>

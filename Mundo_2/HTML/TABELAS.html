@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,th {
+            border: 1px solid #ccc;
+            padding: 0.5em
+        }
+        tr:nth-child(even){ /*impar*/
+            background-color: #ddd;
+        }
+        tr:nth-child(odd){ /*par*/
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>EMPRESA</th>
+                <th>CONTATO</th>
+                <th>País</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SD</td>
+                <td>2299887562</td>
+                <td>Alemanha</td>
+            </tr>
+            <tr>
+                <td>LS</td>
+                <td>2196541387</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>YTB</td>
+                <td>ytb@gmail.com</td>
+                <td>EUA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    atendendos 24H
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
