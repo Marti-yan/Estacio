@@ -1,0 +1,16 @@
+{
+    "correntistas": {
+        "conta": [
+            {
+                "agencia": "0123-4",
+                "tipo": "fifica",
+                "nome": "Yan"
+            },
+            {
+                "agencia": "5678-9",
+                "tipo": "jurídica",
+                "nome": "Martins Tech LTDA"
+            }
+        ]
+    }
+}

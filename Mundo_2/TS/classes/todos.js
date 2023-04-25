@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const encapsulamento_1 = require("./encapsulamento");
+const heranca_1 = require("./heranca");
+const pessoa2 = new encapsulamento_1.Pessoa('Yan', 'arara azul');
+const pessoa3 = new heranca_1.PessoaFisica('Yan 2N', 'arara', '123.456.987-10');
+const pessoa4 = new heranca_1.PessoaJuridica('Martins Tech', 'RJ', '961.0001/07');
+console.log(pessoa2.get_Nome());
+console.log(pessoa3.get_Dados());
+console.log(pessoa4.get_Dados());

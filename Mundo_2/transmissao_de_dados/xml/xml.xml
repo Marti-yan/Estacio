@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<global>
+
+
+    <correntistas>
+        
+        <conta agencia="0123-4">
+            <tipo> Física </tipo>
+            <nome> Yan Martins </nome>
+            <numero> (22) 9.9613-9790 </numero>
+        </conta>
+        
+        <conta agencia="5678-9">
+            <tipo> Jurídica </tipo>
+            <nome> Martins Tech </nome>
+            <numero> (22) 98871-8656 </numero>
+        </conta>
+        
+    </correntistas>
+    <correntistas>
+        <conta agencia="0123-4" tipo="fisica" nome="Yan Martins" numero="000.000-00" />
+        <conta agencia="5678-9" tipo="jurídica" nome="Martins Tech" numero="111.111-11" />
+    </correntistas>
+</global>

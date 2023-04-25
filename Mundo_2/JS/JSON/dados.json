@@ -1,0 +1,30 @@
+{
+    "usuarios": [
+        {
+            "nome": "Yan",
+            "idade": 19,
+            "trabalhando": true,
+            "detalhes_profissao": {
+                "profissao": "Programador",
+                "empresa": "Martins-Tech"
+            },
+            "hobbies": [
+                "ler",
+                "jogar"
+            ]
+        },
+        {
+            "nome": "cleiton",
+            "idade": 20,
+            "trabalhando": false,
+            "detalhes_profissao": {
+                "profissao": "Programador",
+                "empresa": "Martins-Tech"
+            },
+            "hobbies": [
+                "correr",
+                "jogar"
+            ]
+        }
+    ]
+}

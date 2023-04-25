@@ -1,0 +1,10 @@
+correntistas:
+  conta:
+    -agencia: 0123-4
+      tipo: fisica
+      nome: Yan Martins
+      telefone: 22996139790
+    -agencia: 5678-9
+      tipo: juridica
+      nome: MartinsTech
+      telefone: 22988718656
