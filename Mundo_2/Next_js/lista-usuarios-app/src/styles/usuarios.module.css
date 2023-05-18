@@ -1,0 +1,6 @@
+.card{
+    display: flex;
+    padding: 40px;
+    border: 1px solid rgb(19, 10, 149);
+    background-color: #d7d7d7;
+}
