@@ -40,3 +40,45 @@ console.log(precoNumeros)
 // REDUCE simplificado
 const total = precoNumeros.reduce((acumulador, item) => acumulador+item) // serve pra adicionar este valor no total
 console.log(total)
+
+const editoras = [
+{
+    codEditora:1,
+    nome: "yan"
+},
+{
+    codEditora:2,
+    nome: "Martins"
+},
+{
+    codEditora:3,
+    nome:"D'Tech"
+}
+]
+
+const nomes = editoras.map(editora => editora.nome);
+
+console.log(nomes);
+
+const jsonData = [
+    {
+      codEditora: 1,
+      nome: "yan"
+    },
+    {
+      codEditora: 2,
+      nome: "Martins"
+    },
+    {
+      codEditora: 3,
+      nome: "D'Tech"
+    }
+  ];
+  
+  const filtro = 2;
+  const resultadoFiltro = jsonData
+    .filter(item => item.codEditora === filtro)
+    .map(item => item.nome);
+  
+  console.log(resultadoFiltro);
+  
