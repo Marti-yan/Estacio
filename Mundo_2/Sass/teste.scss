@@ -1,0 +1,108 @@
+/*Cor de texto para mensagens de erro*/
+.erro{
+    color:rgb(0, 255, 68);
+}
+
+/*Alinhamento da DIV no centro*/
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh; // altura total da tela
+}
+
+#conteudo{
+    p{
+        color:green;
+    }
+    ul{
+        background-color: aqua;
+        li{
+            border: 1px solid #ccc;
+        }
+    }
+
+    &-cabecalho{
+        background-color: purple;
+    }
+}
+
+
+font {
+    family: serif;
+    size: 12px;
+    weight: normal;
+}
+
+text {
+    align: left;
+    transform: uppercase;
+    overflow: auto;
+}
+           
+
+$tamanho-medio-fonte: 20px;
+
+p{
+    font-size: $tamanho-medio-fonte;
+}
+
+
+$cor-primaria: green;
+span {
+   $cor-primaria: purple;
+   color: $cor-primaria; // aqui será impressa a cor "purple"
+}
+h1 {
+  color: $cor-primaria; // aqui será impressa a cor "green"
+}
+
+
+$cor-principal: green;
+span {
+    $cor-principal: purple !global;
+    color: $cor-principal; // O valor de $cor-principal agora é "purple"
+}
+a {
+   color: $cor-principal; // O valor de $cor-principal agora também é purple por conta do marcador    !global declarado anteriormente
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "cores"; // por convenção, você pode omitir o _
+// @import "_cores"; // porém essa chamada também funcionará
+
+#div{
+    background-color: $alerta;
+}
+
+@mixin alinha-esquerda{
+    text-align: left;
+}
+
+.caixa-de-erro{
+    @include alinha-esquerda;
+    color: red;
+}
+            
+
+// arquio chamado botao.scss
+@mixin botao {
+    a {
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+
+        &:hover{
+            color: blue;
+        }
+
+        &:visited{
+            color: green;
+        }
+    }
+}
+       
+.botao-lateral{
+    @include botao;
+}

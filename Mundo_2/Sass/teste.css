@@ -1,0 +1,78 @@
+/*Cor de texto para mensagens de erro*/
+.erro {
+  color: rgb(0, 255, 68);
+}
+
+/*Alinhamento da DIV no centro*/
+.center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+#conteudo p {
+  color: green;
+}
+#conteudo ul {
+  background-color: aqua;
+}
+#conteudo ul li {
+  border: 1px solid #ccc;
+}
+#conteudo-cabecalho {
+  background-color: purple;
+}
+
+font {
+  family: serif;
+  size: 12px;
+  weight: normal;
+}
+
+text {
+  align: left;
+  transform: uppercase;
+  overflow: auto;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  color: purple;
+}
+
+h1 {
+  color: green;
+}
+
+span {
+  color: purple;
+}
+
+a {
+  color: purple;
+}
+
+#div {
+  background-color: #FDD835;
+}
+
+.caixa-de-erro {
+  text-align: left;
+  color: red;
+}
+
+.botao-lateral a {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+.botao-lateral a:hover {
+  color: blue;
+}
+.botao-lateral a:visited {
+  color: green;
+}/*# sourceMappingURL=teste.css.map */
